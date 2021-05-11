@@ -1,0 +1,38 @@
+$small: 640px;
+$medium: 900px;
+
+.profile_modal_container {
+  width: 600px;
+  border-radius: 10px;
+  @media screen and (max-width: $small) {
+    width: 80% !important;
+  }
+  @media screen and (min-width: $medium) {
+    width: 80%;
+  }
+}
+
+.img_wrp {
+  display: inline-block;
+  position: relative;
+  margin:5px;
+  cursor: pointer;
+  .image_picker {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(44, 152, 224);
+    border-radius:15px;
+    z-index: 2;
+    height: 30px;
+    width:30px;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    
+
+    i{
+      color:white;
+    }
+  }
+}
